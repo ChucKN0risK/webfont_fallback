@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Cormorant_Bold';
+    src: url('../assets/fonts/CormorantInfant-Bold.woff2') format('woff2'),
+         url('../assets/fonts/CormorantInfant-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HKGrotesk_Regular';
+    src: url('../assets/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+         url('../assets/fonts/HKGrotesk-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HKGrotesk_SemiBold';
+    src: url('../assets/fonts/HKGrotesk-SemiBold.woff2') format('woff2'),
+         url('../assets/fonts/HKGrotesk-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --color-beige: #f6f5de;
+    --max-content-width: 34rem;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-beige);
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-spacing: -0.066em;
+}
+
+html.fonts-loaded body {
+    font-family: 'HKGrotesk_Regular', sans-serif;
+    word-spacing: 0;
+}
+
+html.fonts-loaded h1 {
+    font-family: 'Cormorant_Bold', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 3.25rem;
+    font-weight: 30;
+    line-height: 1.42;
+}
+
+html.fonts-loaded a {
+    font-family: 'HKGrotesk_SemiBold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+}
+
+.lc-single {
+    padding: 1rem;
+    max-width: var(--max-content-width);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
