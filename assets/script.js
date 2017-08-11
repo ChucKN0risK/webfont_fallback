@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const typefaces = {
         HKGrotesk_Regular: [
             { weight: 300, style: 'normal' }
